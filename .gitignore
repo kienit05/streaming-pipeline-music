@@ -1,0 +1,13 @@
+# never push these
+secrets/
+data/
+.env
+
+# python / spark junk
+__pycache__/
+*.pyc
+.pytest_cache/
+spark-warehouse/
+metastore_db/
+derby.log
+*.part
