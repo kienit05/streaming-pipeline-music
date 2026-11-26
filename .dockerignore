@@ -1,0 +1,4 @@
+data/
+secrets/
+.git/
+__pycache__/
