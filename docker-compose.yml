@@ -1,0 +1,12 @@
+services:
+  spark:
+    build: .
+    image: music-lakehouse-spark
+    working_dir: /app
+    volumes:
+      - ./:/app            # live code + data, no rebuild needed
+    environment:
+      SPARK_DRIVER_MEMORY: 4g
+      GOOGLE_APPLICATION_CREDENTIALS: /app/secrets/gcp-key.json
+    ports:
+      - "4040:4040"        # Spark UI
