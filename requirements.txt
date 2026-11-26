@@ -1,0 +1,7 @@
+pyspark==3.5.*
+requests
+zstandard
+google-cloud-storage
+google-cloud-bigquery
+pytest
+chispa
